@@ -1,130 +1,550 @@
-# AI Health Symptom Checker using Machine Learning
+# 🩺 AI Health Symptom Checker using Machine Learning
 
-A complete, production-ready **Final Year Academic Project** implementing a pre-clinical assessment tool utilizing custom supervised machine learning classifiers to map symptom lists onto predicted medical conditions in real-time.
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web_Framework-black?style=for-the-badge&logo=flask)
+![Machine Learning](https://img.shields.io/badge/Machine_Learning-Scikit--Learn-orange?style=for-the-badge)
+![SQLite](https://img.shields.io/badge/Database-SQLite-003B57?style=for-the-badge&logo=sqlite)
+![License](https://img.shields.io/badge/Academic_Project-Final_Year-success?style=for-the-badge)
+
+### AI-Powered Medical Symptom Prediction & Clinical Report Generation
+
+*A production-ready Final Year Major Project built using Machine Learning, Flask, and Modern Web Technologies.*
+
+### 🌐 Live Demo
+**🔗 Application:** https://ai-health-symptom-check.onrender.com
+
+### 💻 GitHub Repository
+**🔗 Repository:** https://github.com/CheboluGayatri/AI_HEALTH_SYMPTOM_CHECK
+
+</div>
 
 ---
 
-## 🚀 Key Features
+# 📖 Overview
 
-- **Random Forest ML Classification**: Dynamic prediction calculation featuring Top-3 differential matches with specific probability allocation percentages.
-- **Zero-Hardcoding Pipeline**: Automatically parses training parameters dynamically from the source dataset (`dataset.csv`).
-- **Hands-Free Voice Dictation**: Real-time microphone audio processing in-browser using the Web Speech API to match vocal phrases against system checkboxes instantly.
-- **Medical AI Chatbot**: Conversational agent powered by Hugging Face free Inference API to answer health concerns, precaution guidelines, and medication suggestions.
-- **Clinical Report Generator**: Compiles and serves professional multi-page PDF diagnostics reports using ReportLab, embedding beautiful custom-rendered Matplotlib probability charts.
-- **SQLite Database Persistence**: Full security login systems powered by Flask-Login and password hashing schemas.
-- **Aesthetic Dual-Theme Layout**: Clean emerald-teal clinical visual themes with full Dark Mode support and responsive layouts.
+The **AI Health Symptom Checker** is an intelligent healthcare web application that predicts possible diseases based on user-selected symptoms using **Machine Learning**.
+
+Unlike traditional symptom checkers that rely on manually written rules, this project uses a **Random Forest Classifier** trained on a medical symptom dataset to provide probability-based disease predictions.
+
+The application also includes:
+
+- 🔐 Secure User Authentication
+- 🤖 AI Medical Chatbot
+- 🎤 Voice-based Symptom Selection
+- 📄 PDF Clinical Report Generation
+- 📊 Interactive Prediction Charts
+- 🌙 Dark/Light Theme
+- 📱 Responsive User Interface
+
+This project demonstrates the practical integration of **Artificial Intelligence, Machine Learning, Web Development, Data Science, and Database Management** into a healthcare solution.
 
 ---
 
-## 📂 Project Directory Structure
+# 🚀 Live Application
 
-```text
+| Platform | Link |
+|----------|------|
+| 🌐 Live Demo | https://ai-health-symptom-check.onrender.com |
+| 💻 GitHub Repository | https://github.com/CheboluGayatri/AI_HEALTH_SYMPTOM_CHECK |
+
+---
+
+# ✨ Features
+
+## 🧠 Machine Learning Disease Prediction
+
+- Random Forest Classification
+- Top-3 probable disease predictions
+- Probability percentage for each prediction
+- Dynamic feature extraction
+- Zero hardcoded symptom mapping
+- Dataset-driven prediction pipeline
+
+---
+
+## 🎤 Voice-Based Symptom Recognition
+
+- Browser microphone support
+- Web Speech API integration
+- Automatic symptom checkbox selection
+- Hands-free interaction
+- Real-time speech processing
+
+---
+
+## 🤖 AI Medical Chatbot
+
+- Hugging Face Inference API integration
+- Health guidance
+- Medication suggestions
+- Preventive recommendations
+- Offline fallback chatbot
+
+---
+
+## 📄 PDF Clinical Report Generator
+
+Generate professional downloadable reports containing:
+
+- Patient details
+- Selected symptoms
+- Predicted diseases
+- Probability analysis
+- Clinical recommendations
+- Date & Time
+- Medical disclaimer
+- Probability charts
+
+---
+
+## 📊 Visualization Dashboard
+
+Automatic generation of:
+
+- Disease probability pie chart
+- Confidence bar chart
+- Matplotlib visualizations
+- PDF embedded graphics
+
+---
+
+## 🔐 Authentication System
+
+- User Registration
+- Login
+- Password Hashing
+- Session Management
+- Flask-Login integration
+- Secure Authentication
+
+---
+
+## 💾 Database Management
+
+SQLite Database stores:
+
+- User Accounts
+- Login Credentials
+- Assessment History
+- Generated Reports
+- Disease Predictions
+
+---
+
+## 🌙 Modern UI
+
+- Bootstrap 5
+- Dark Mode
+- Light Mode
+- Responsive Design
+- Mobile Friendly
+- Clean Healthcare Interface
+
+---
+
+# 🛠 Tech Stack
+
+## Programming Languages
+
+- Python
+- HTML5
+- CSS3
+- JavaScript
+
+---
+
+## Backend
+
+- Flask
+- Flask-Login
+
+---
+
+## Frontend
+
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+
+---
+
+## Machine Learning
+
+- Scikit-learn
+- Random Forest Classifier
+
+---
+
+## Data Processing
+
+- Pandas
+- NumPy
+
+---
+
+## AI
+
+- Hugging Face Transformers API
+
+---
+
+## Database
+
+- SQLite
+
+---
+
+## Data Visualization
+
+- Matplotlib
+- Seaborn
+
+---
+
+## Voice Recognition
+
+- SpeechRecognition
+- Web Speech API
+
+---
+
+## PDF Generation
+
+- ReportLab
+
+---
+
+# 📂 Project Structure
+
+```
 AI_Health_Symptom_Checker/
-├── app.py                      # Flask Server Core & REST Endpoints
-├── symptom_checker.py          # Scikit-Learn RandomForest Model and Preprocessor
-├── report_generator.py         # ReportLab Clinical PDF Generator
-├── visualizations.py           # Matplotlib Chart Renderer Engine
-├── database.py                 # SQLite Table Initializations and Queries
-├── auth.py                     # Flask-Login & Cryptographic Password Hashing
-├── chatbot.py                  # Hugging Face AI Conversational Agent Client
-├── voice_input.py              # Subprocess Voice recognition stub
-├── dataset.csv                 # Source 15-Disease Training Dataset
-├── requirements.txt            # Python Package Dependencies List
-├── README.md                   # Complete Setup Documentation
+│
+├── app.py
+├── auth.py
+├── chatbot.py
+├── database.py
+├── report_generator.py
+├── symptom_checker.py
+├── visualizations.py
+├── voice_input.py
+├── dataset.csv
+├── requirements.txt
+├── README.md
+│
 ├── instance/
-│   └── users.db                # Auto-generated SQLite database
+│   └── users.db
+│
 ├── reports/
-│   └── report_*.pdf            # Pre-compiled PDF diagnostic assessments
+│
 ├── static/
 │   ├── css/
-│   │   └── style.css           # Global custom layout stylings
 │   ├── js/
-│   │   ├── script.js           # AJAX form validations and UI controls
-│   │   ├── voice.js            # Web Speech Recognition controller
-│   │   └── theme.js            # LocalStorage light/dark theme toggle
 │   └── charts/
-│       ├── probability_pie.png # Matplotlib Pie chart asset
-│       └── confidence_bar.png # Matplotlib Bar chart asset
+│
 └── templates/
-    ├── login.html              # Dark-mode compatible authentication
-    ├── register.html           # New user profile registration
-    ├── dashboard.html          # Medical Diagnostic Center Workspace
-    ├── report.html             # Detailed clinical diagnostics card
-    └── chatbot.html            # AI Conversational Chatroom interface
+    ├── dashboard.html
+    ├── login.html
+    ├── register.html
+    ├── report.html
+    └── chatbot.html
 ```
 
 ---
 
-## 🔧 Installation & Local Setup Instructions
+# ⚙️ Installation
 
-Follow these step-by-step instructions to run the Python full-stack Flask/ML application locally on your computer:
+## Clone Repository
 
-### Prerequisite Checklist
-- Install Python 3.10 or higher.
-- Verify pip is installed (`python -m pip --version`).
-
-### Step 1: Clone or Unzip Project Folder
-Unpack this directory into your preferred local workspace:
 ```bash
-cd AI_Health_Symptom_Checker
+git clone https://github.com/CheboluGayatri/AI_HEALTH_SYMPTOM_CHECK.git
 ```
 
-### Step 2: Establish Virtual Environment (Recommended)
-Create a clean python environment to avoid package dependency conflicts:
+```bash
+cd AI_HEALTH_SYMPTOM_CHECK
+```
+
+---
+
+## Create Virtual Environment
+
+### Windows
+
 ```bash
 python -m venv venv
 ```
-Activate on macOS/Linux:
-```bash
-source venv/bin/activate
-```
-Activate on Windows Command Prompt:
+
 ```bash
 venv\Scripts\activate
 ```
 
-### Step 3: Install Required Packages
+### Linux / macOS
+
+```bash
+python3 -m venv venv
+```
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+## Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 4: Configure Environment Variables (Optional)
-To activate the Hugging Face AI Chatbot assistant, configure your free API token:
+---
+
+## Configure Environment Variable
+
+Windows
+
 ```bash
-# Linux/macOS
-export HF_API_TOKEN="your_huggingface_inference_api_token"
-
-# Windows Command Prompt
-set HF_API_TOKEN=your_huggingface_inference_api_token
+set HF_API_TOKEN=your_token
 ```
-*Note: If no HF_API_TOKEN is supplied, the chatbot automatically falls back to a highly reliable, custom rule-based expert system, operating entirely offline!*
 
-### Step 5: Run App Server
-Initiate model training and boot up the server:
+Linux/macOS
+
+```bash
+export HF_API_TOKEN=your_token
+```
+
+---
+
+## Run Application
+
 ```bash
 python app.py
 ```
-Open your browser and navigate to:
-**`http://localhost:5000`**
+
+Visit
+
+```
+http://localhost:5000
+```
 
 ---
 
-## 🧠 Machine Learning Engine Summary
+# 🧠 Machine Learning Workflow
 
-Our supervised model architecture utilizes a **Random Forest Classifier** configured with 100 decision trees to ensure high accuracy and mitigate overfitting risks on training symptom feature matrices.
-1. **Feature Parsing**: Loads columns from `dataset.csv` dynamically, generating a binary 24-symptom feature vector for inputs.
-2. **Label Encoding**: Uses Scikit-Learn `LabelEncoder` to translate target disease labels dynamically.
-3. **Probability Modeling**: Leverages `predict_proba` matrix metrics to extract confidence intervals, returning the Top-3 diagnostic differentials.
+```
+Medical Dataset
+       │
+       ▼
+Feature Extraction
+       │
+       ▼
+Label Encoding
+       │
+       ▼
+Random Forest Training
+       │
+       ▼
+Prediction
+       │
+       ▼
+Top-3 Disease Results
+       │
+       ▼
+Probability Analysis
+       │
+       ▼
+PDF Report Generation
+```
 
 ---
 
-## 📈 Database Schema Mapping
+# 📊 ML Pipeline
 
-Stored securely in SQLite (`instance/users.db`):
-- `users`: Standard registration profiles including auto-increment identifiers, unique email mappings, and cryptographic password hashing salts.
-- `diagnostic_reports`: Tracks chronological assessment history records, linking patients, checked symptoms, predictions, confidence rates, and recommendation logs.
+### Dataset Loading
+
+- Reads dataset.csv
+- Automatically detects symptom columns
+
+### Feature Engineering
+
+- Binary symptom vectors
+- Dynamic preprocessing
+
+### Model Training
+
+- Random Forest Classifier
+- 100 Decision Trees
+
+### Prediction
+
+- Predicts disease
+- Calculates confidence score
+- Returns Top-3 probable diseases
 
 ---
 
-## 🛡️ Medical Disclaimer
-This software represents a pre-clinical computational study project. It does not replace formal laboratory diagnostics, and is not suitable for severe cardiac, cerebral, or pulmonary emergent states. Consult qualified hospital practitioners for standard medical advice.
+# 🗄 Database Schema
+
+## users
+
+| Field | Description |
+|--------|-------------|
+| id | Primary Key |
+| username | Username |
+| email | Unique Email |
+| password | Hashed Password |
+
+---
+
+## diagnostic_reports
+
+| Field | Description |
+|--------|-------------|
+| report_id | Primary Key |
+| user_id | Foreign Key |
+| symptoms | Selected Symptoms |
+| prediction | Predicted Disease |
+| confidence | Prediction Score |
+| timestamp | Assessment Date |
+
+---
+
+# 📄 Generated Report Includes
+
+- Patient Details
+- Symptoms
+- Disease Prediction
+- Top-3 Predictions
+- Probability Analysis
+- Pie Chart
+- Bar Chart
+- Medical Recommendations
+- Date & Time
+- Medical Disclaimer
+
+---
+
+# 🔒 Security Features
+
+- Password Hashing
+- Secure Login
+- Flask Sessions
+- Protected Routes
+- SQL Injection Protection
+- Authentication Middleware
+
+---
+
+# 📸 Application Modules
+
+- Login System
+- Registration System
+- Dashboard
+- Symptom Checker
+- Voice Recognition
+- Disease Prediction
+- AI Chatbot
+- PDF Report Generator
+- History Management
+
+---
+
+# 📈 Future Enhancements
+
+The current application is built using **Python Flask**.
+
+The next enterprise version will include a modern full-stack architecture powered by Artificial Intelligence.
+
+### Planned Technology Stack
+
+- ⚛ React.js
+- 🟢 Node.js
+- 🚀 Express.js
+- 🍃 MongoDB
+- 🔥 JWT Authentication
+- 🤖 Advanced LLM-based Medical Assistant
+- 📱 Progressive Web App (PWA)
+- ☁ Cloud Database
+- 📊 Advanced Analytics Dashboard
+- 📅 Appointment Booking
+- 💬 Real-time Chat
+- 📹 Video Consultation
+- 🩺 Wearable Device Integration
+- 🔔 Smart Notifications
+- 🌍 Multi-language Support
+- 📲 Android & iOS Mobile Application
+- ☁ Docker Deployment
+- ☸ Kubernetes Support
+- 🔄 CI/CD Pipeline
+- 📡 REST API
+- 📈 Admin Dashboard
+- 📤 Email Notifications
+- 📥 Medical History Export
+- 🧬 Personalized Health Recommendations
+
+---
+
+# 🎯 Learning Outcomes
+
+This project demonstrates practical implementation of:
+
+- Machine Learning
+- Artificial Intelligence
+- Healthcare Informatics
+- Flask Development
+- Database Management
+- Authentication Systems
+- REST Architecture
+- Speech Recognition
+- Data Visualization
+- PDF Generation
+- Responsive UI Design
+
+---
+
+# ⚠ Medical Disclaimer
+
+> This application is developed **strictly for educational and academic purposes**.
+
+The predictions generated by the Machine Learning model are based on symptom patterns and **should not be considered professional medical advice, diagnosis, or treatment**.
+
+Always consult a qualified healthcare professional for accurate diagnosis and emergency medical conditions.
+
+---
+
+# 👩‍💻 Developer
+
+**Gayatri Chebolu**
+
+### Connect With Me
+
+- 💻 GitHub: https://github.com/CheboluGayatri
+- 🌐 Project Repository: https://github.com/CheboluGayatri/AI_HEALTH_SYMPTOM_CHECK
+- 🚀 Live Application: https://ai-health-symptom-check.onrender.com
+
+---
+
+# ⭐ Support
+
+If you found this project helpful:
+
+⭐ Star the repository
+
+🍴 Fork the project
+
+💡 Share your suggestions
+
+📩 Open an Issue
+
+---
+
+<div align="center">
+
+### Made with ❤️ using Python, Flask, Machine Learning & AI
+
+**AI Health Symptom Checker**
+
+*Empowering Healthcare with Artificial Intelligence.*
+
+</div>
