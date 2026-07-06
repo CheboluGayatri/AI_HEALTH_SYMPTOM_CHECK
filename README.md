@@ -13,7 +13,7 @@
 *A production-ready Final Year Major Project built using Machine Learning, Flask, and Modern Web Technologies.*
 
 ### 🌐 Live Demo
-**🔗 Application:** https://ai-health-symptom-check.onrender.com
+**🔗 Application:** https://ai-health-symptom-check.onrender.com/
 
 ### 💻 GitHub Repository
 **🔗 Repository:** https://github.com/CheboluGayatri/AI_HEALTH_SYMPTOM_CHECK
